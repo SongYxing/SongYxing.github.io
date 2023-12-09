@@ -1,10 +1,236 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>None</title>
-	</head>
-	<body>
-		<h2>None</h2>
-	</body>
+<head>
+<title>Yexing Song</title>
+<meta name="google-site-verification" content="QjLkUt7GRHvXWyLqRw7NZ7MW0-3BEg5TfF4bl-kxZB0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap" rel="stylesheet"> 
+<style type="text/css">
+.content {
+    width:900px;
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+}
+h1 {
+    font-weight: 400;
+}
+.banner {
+    width:900px;
+    padding:0px; margin:0px;
+    position: absolute; top:4px; left:0px;
+    z-index: 0;
+}
+.banner td {
+    padding:0px; margin:0px;
+}
+.banner_img {
+    width:132px; height: 132px;
+    margin-right:9px;
+    margin-left:9px;
+}
+.overlay {
+    position: absolute; top:0px; left:0px;
+    z-index: 1;
+    text-align:center;
+    width: 900px;
+}
+.grad-l {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 255));
+    display:inline-block;
+    height:140px;
+    width:70px;
+}
+.grad-r {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 255));
+    display:inline-block;
+    height:140px;
+    width:70px;
+}
+#vector-table {
+    text-align:center;
+    margin-left:5px;
+    margin-right:5px;
+    width:21px;
+    transition: width 2s;
+}
+#vector-table tr, #vector-table td, #vector-table tbody {
+    width:100%;
+}
+#vector-table td, .vt-like td {
+    border: 1px solid gray;
+    border-bottom: none;
+}
+#vector-table tr:last-child > td, .vt-like tr:last-child > td {
+    border: 1px solid gray;
+    border-bottom: 1px solid gray !important;
+}
+.menu-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    display:none;
+}
+.menu-item a {
+    color:black;
+    text-decoration:none;
+}
+.menu-item a:hover {
+    text-decoration:underline;
+}
+.encdec {
+    background-color:white;
+    display:inline-block;
+}
+td.red {
+    background:rgb(255,0,0);
+}
+td.blue {
+    background:rgb(40,40,255);
+}
+td.green {
+    background:rgb(0,150,0);
+}
+td.orange {
+     background:rgb(255,165,0);
+}
+td.red:hover {
+    background:rgb(255,50,50);
+}
+td.blue:hover {
+    background:rgb(50,50,255);
+}
+td.green:hover {
+    background:rgb(50,150,50);
+}
+td.orange:hover {
+     background:rgb(255,205,40);
+}
+.lnk:link, .lnk:visited {
+    color:#000000;
+}
+.lnk:hover {
+    color:gray;
+}
+.article {
+    height: 100px;
+}
+.article * {
+    font-weight: 200;
+}
+.article b {
+    font-weight: 400 !important;
+}
+.article-img {
+    width:100px;
+    height:100px;
+    vertical-align:middle;
+}
+@media only screen and (max-width: 900px) {
+    #banner-div { display:none !important; }
+    #small-div { display:block !important; }
+    .content { width:100% !important; }
+    .article { margin-bottom:80px; }
+}
+</style>
+<script type="text/javascript">
+var shown = false;
+function toggle_text() {
+    var items = document.getElementsByClassName("menu-item");
+    for (var i =0; i < items.length; i++) {
+        if (shown) {
+            items[i].style.display = "none";
+        }
+        else {
+            items[i].style.display = "inline";
+        }
+    }
+    shown = !shown;
+}
+function toggle_menu() {
+    if (shown) {
+        document.getElementById("vector-table").style.width="21px";
+        setTimeout(toggle_text, 100);
+    }
+    else {
+        document.getElementById("vector-table").style.width="161px";
+        setTimeout(toggle_text, 1000);
+    }
+}
+function show_menu() {
+    if(!shown) {
+        document.getElementById("vector-table").style.width="161px";
+        setTimeout(toggle_text, 1000);
+    }
+}
+</script>
+</head>
+<body dir="ltr">
+<center><div class="content">
+    <center>
+        <h1>Yexing Song</h1>
+        M.S. in Guangdong University of Technology (2022 - present)<br />
+        Researching machine learning &amp; computer vision. 
+        Interested in low-level computer visiond. <br />
+        <a class="lnk" href="https://github.com/SongYxing">GitHub</a>&nbsp;&nbsp;-&nbsp;&nbsp;<a class="lnk" href="https://scholar.google.com/citations?user=iUf5S_QAAAAJ">Google Scholar</a>&nbsp;
+    </center>
+    <br /><br />
+    <div style="position:relative;height:140px;" id="banner-div">
+        <table class="banner" cellspacing="0" cellpadding="0"><tr>
+            <td><img src="profile/noise_4.png" class="banner_img" /></td>
+            <td><img src="profile/noise_3.png" class="banner_img" /></td>
+            <td><img src="profile/noise_2.png" class="banner_img" /></td>
+            <td><img src="profile/noise_1.png" class="banner_img" /></td>
+            <td><img src="profile/49.png" class="banner_img" /></td>
+            <td><img src="profile/0.png" class="banner_img" /></td>
+        </tr></table>
+        <div class="overlay">
+            <div class="grad-l"></div><div class="encdec">
+                <table cellspacing="0" cellpadding="0" style="text-align:center;"><tr>
+                    <td><img src="enc.png" style="height:140px;width:65px;" onclick="toggle_menu();"/></td>
+                    <td style="vertical-align:middle;" onclick="show_menu();">
+                        <table id="vector-table" cellspacing="0">
+                            <tr><td class="red">&nbsp;&nbsp;<span class="menu-item"><a href="#about">About Me</a></span>&nbsp;&nbsp;</td></tr>
+                            <tr><td class="blue">&nbsp;&nbsp;<span class="menu-item"><a href="#pub">Publications</a></span>&nbsp;&nbsp;</td></tr>
+                            <tr><td class="green">&nbsp;&nbsp;<span class="menu-item"><a href="#awards">Awards</a></span>&nbsp;&nbsp;</td></tr>
+                            <tr><td class="orange">&nbsp;&nbsp;<span class="menu-item"><a href="#teach">Teaching</a></span>&nbsp;&nbsp;</td></tr>
+                        </table>
+                    </td>
+                    <td><img src="dec.png" style="height:140px;width:65px;" onclick="toggle_menu();" /></td>
+                </tr></table>
+            </div><div class="grad-r"></div>
+        </div>
+    </div>
+    <div style="height:100px;display:none;text-align:center;" id="small-div"><center><table cellspacing="0"><tr>
+        <td><img src="profile/noisy30.png" style="width:100px;height:100px;" /></td>
+        <td><img src="enc.png" style="height:100px;width:40px;"/></td>
+        <td><table class="vt-like" cellspacing="0">
+            <tr><td class="red">&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+            <tr><td class="blue">&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+            <tr><td class="green">&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+            <tr><td class="orange">&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+        </table></td>
+        <td><img src="dec.png" style="height:100px;width:40px;"/></td>
+        <td><img src="profile/noisy0.png" style="width:100px;height:100px;" /></td>
+    </tr></table></center></div>
+    <br /><br />
+    <div id="about" style="border-top:1px solid gray;">
+    <h2>About Me</h2>
+    <p>
+	I am a M.S candidate in the School of Information Engineering, Guangdong University of Technology, advised by Meilin Wang and <a class="lnk" href="https://ykshi.github.io/">Yukai Shi</a>.
+	</p>
+    </div>
+    <br />
+    <div id="pub" style="border-top:1px solid gray;">
+    <h2>Publications</h2>
+    <h3>2024</h3>
+	    <div class="article"><table><tr>
+        <td valign="middle"><img src="figures/negvsr.png" class="article-img" /></td>
+        <td valign="middle"><b>Yexing Song</b>, Meilin Wang, Xiaoyu Xian, Zhijing Yang, Yuming Fan, <a class="lnk" href="https://ykshi.github.io/">Yukai Shi</a><br />
+        <a class="lnk" href="https://arxiv.org/abs/2305.14669">NegVSR: Augmenting Negatives for Generalized Noise Modeling in Real-World Video Super-Resolution</a><br />
+        <b>AAAI 2024</b>, in <i>AAAI Conference on Artificial Intelligence</i>.<br />
+    </tr></table></div> <br />
+    </div>
+    <br />
+</div></center>
+</body>
 </html>
